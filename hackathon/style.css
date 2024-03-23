@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body {
+  font-family: 'Outfit';
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the navbar horizontally */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  margin-left: 5vw;
+  padding-left: 2vw;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #FFBC3B;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  width: 250px; /* Adjust width as needed */
+  margin-right: 2vw;
+  margin-left: 5vw;
+}
+
+.search-bar input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.search-bar button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.add-recipe-btn {
+  background-color: #FFBC3B;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.add-recipe-btn i {
+  margin-right: 5px;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+  }
+  .search-bar {
+      width: 100%;
+  }
+}
+.categ{
+  margin: 0 4vw 0 4vw;
+}
+div h3,h5{
+  text-align: center;
+}
+div span{
+  padding: 0.5vw 1vw 0.5vw 1vw;
+  text-align: center;
+  margin: 0 1.5vw 0 1.5vw;
+  border: 2px solid black;
+  border-radius: 0.5vw;
+}
+.item {
+  margin: 0 5vw 0 5vw;
+}
+.no1.active {
+  opacity: 0;  /* Optional: Fade out menu on hide */
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
